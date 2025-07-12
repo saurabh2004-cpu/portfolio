@@ -1,32 +1,33 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Code, Palette, Lightbulb } from "lucide-react"
+import { Code, Palette, Lightbulb, } from "lucide-react"
 
 const About = () => {
   return (
     <section id="about" className="py-20 bg-slate-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-gray-400 text-lg mb-4">Who I Am</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-purple-400 mb-8">About Me</h2>
-        </div>
+  <p className="text-gray-400 text-lg mb-4">Who I Am</p>
+  <h2 className="text-4xl md:text-5xl font-bold text-purple-400 mb-8">
+    &lt;About Me&gt;
+  </h2>
+</div>
 
+
+        {/* <div className="flex justify-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
+               
+              </div>
+            </div> */}
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16 flex ">
+          <div className="grid  gap-12 items-center mb-16 flex ">
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Hey there! I&apos;m Saurabh, and I&apos;m excited to welcome you to my corner of the web. As a passionate student
-                and a dedicated website developer and designer, I thrive on bringing ideas to life through digital
-                experiences.
+                I'm Saurabh Bodakhe, a dedicated full stack web developer with practical experience building scalable, user-focused web applications using the MERN stack. I’ve developed and deployed real-world projects like an e-commerce platform (HomeShoppr), a video streaming app, and an AI-powered job recommendation system — all with robust backend architecture and clean, responsive frontends using React, Next.js, Node.js, and MongoDB.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                I&apos;m currently pursuing my studies in BCA at K.J.Somaiyya Kopargaon. My insatiable curiosity drives me to
-                constantly learn and explore new technologies and design trends in the dynamic world of web development.
+                My recent projects integrate tools like LangChain.js, Redis, Docker, RabbitMQ, Socket.io, and WebRTC to enable smart recommendations, real-time chat, and video conferencing. I enjoy turning ideas into full-fledged applications and always aim for performance, scalability, and great user experience.
+                I'm currently focused on enhancing my data structures and algorithms skills and seeking opportunities to contribute to forward-thinking teams that value collaboration, innovation, and code quality.
               </p>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-64 h-64 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
-                <Code className="h-24 w-24 text-white" />
-              </div>
             </div>
           </div>
 

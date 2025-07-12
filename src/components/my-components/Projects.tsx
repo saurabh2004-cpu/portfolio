@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
@@ -70,7 +70,198 @@ const Projects = () => {
       githubUrl: "https://github.com/saurabh2004-cpu/job-recomendation-system",
       featured: true,
     },
-   
+    {
+      id: 2,
+      title: "Full-Stack E-Commerce Platform with Next.js",
+      shortDescription:
+        "Built a scalable, full-featured e-commerce platform using Next.js for both frontend and backend, featuring secure OTP auth, dynamic user experiences, and server-side rendering for better performance and SEO.",
+      fullDescription: `
+    This project is a fully responsive e-commerce platform architected using Next.js for both the frontend and backend, offering a seamless and modern online shopping experience. The application is designed for performance, scalability, and user engagement.
+
+    Key Features:
+    • Home page with dynamic product listings
+    • User authentication with NextAuth and SMS-based OTP login
+    • Seller dashboard for managing products, orders, and earnings
+    • Buyer dashboard with order history, wishlist, and cart
+    • Dynamic product detail pages with add-to-cart and checkout functionality
+    • Address management system with geolocation-based autofill
+    • Server-side rendered pages for enhanced SEO and faster initial load
+    • Admin panel for managing products, users, and system logs
+    • Real-time order status updates and inventory sync
+
+    Technical Implementation:
+    • Built entirely with Next.js 14 leveraging App Router and TypeScript
+    • Used MongoDB as the primary database for storing users, orders, and product data
+    • Designed modular REST APIs using Next.js API routes
+    • Implemented server-side rendering via \`getServerSideProps\` to improve SEO and reduce initial page load time by ~30%
+    • Integrated Tailwind CSS and ShadCN for consistent design and reusable UI components
+    • Used NextAuth for robust session management with SMS-based OTP authentication
+    • Dynamic address detection implemented via geolocation APIs for faster checkouts
+    • Created custom cart and order logic with session and DB sync
+    • Optimized Lighthouse performance scores by lazy loading components and images
+    • Implemented middleware-based route protection for secure access
+    • Deployed on Vercel with environment-based configuration handling
+
+    Description:
+    • This e-commerce platform was developed as a full-stack solution using only Next.js for both client and server logic, showcasing the framework’s power and flexibility.
+    
+    • The app features seller and user flows with tailored dashboards and data rendering using SSR (getServerSideProps), which significantly improved SEO and initial page load speeds.
+
+    • Tailwind CSS and ShadCN components were used to deliver a clean, mobile-friendly design. Custom REST APIs were built for handling orders, payments, and user data operations securely and efficiently.
+
+    • SMS-based OTP login was integrated using NextAuth and third-party gateways, increasing security and user trust. Geolocation-assisted address entry was implemented to enhance the checkout experience.
+
+    • Focused on performance, accessibility, and responsive design, the app delivers a near-native experience across devices and browsers.
+
+    This project highlights end-to-end ownership of both frontend and backend using a modern, production-ready stack suitable for commercial applications.
+  `,
+      images: ["/ecommerce1.png", "/ecommerce2.png", "/ecommerce3.png", "/ecommerce4.png", "/ecommerce5.png", "/ecommerce6.png", "/ecommerce7.png", "/ecommerce8.png", "/ecommerce9.png", "/ecommerce10.png"],
+      technologies: ["Next.js", "MongoDB", "TailwindCSS", "ShadCN", "TypeScript", "NextAuth", "OTP Auth", "SSR"],
+      liveUrl: " https://nextjs-e-commerce-4tda-ki35vvzwt-saurabh2004cpus-projects.vercel.app/",
+      githubUrl: "https://github.com/saurabh2004-cpu/nextjs-E-commerce",
+      featured: true,
+    },
+    {
+      id: 3,
+      title: "E-commerce store (internship project)",
+      shortDescription:
+        "Built a scalable, full-featured e-commerce platform using Next.js for both frontend and backend, featuring secure OTP auth, dynamic user experiences, and server-side rendering for better performance and SEO.",
+      fullDescription: `
+        This project is a fully responsive e-commerce platform architected using Next.js for both the frontend and backend, offering a seamless and modern online shopping experience. The application is designed for performance, scalability, and user engagement.
+
+      Key Features:
+      • Home page with dynamic product listings  
+      • User authentication with NextAuth and SMS-based OTP login  
+      • Seller dashboard for managing products, orders, and earnings  
+      • Buyer dashboard with order history, wishlist, and cart  
+      • Dynamic product detail pages with add-to-cart and checkout functionality  
+      • Address management system with geolocation-based autofill  
+      • Server-side rendered pages for enhanced SEO and faster initial load  
+      • Admin panel for managing products, users, and system logs  
+      • Real-time order status updates and inventory sync
+
+      Technical Implementation:
+      • Built entirely with Next.js 14 leveraging App Router and TypeScript  
+      • Used MongoDB as the primary database for storing users, orders, and product data  
+      • Designed modular REST APIs using Next.js API routes  
+      • Implemented server-side rendering via \`getServerSideProps\` to improve SEO and reduce initial page load time by ~30%  
+      • Integrated Tailwind CSS and ShadCN for consistent design and reusable UI components  
+      • Used NextAuth for robust session management with SMS-based OTP authentication  
+      • Dynamic address detection implemented via geolocation APIs for faster checkouts  
+      • Created custom cart and order logic with session and DB sync  
+      • Optimized Lighthouse performance scores by lazy loading components and images  
+      • Implemented middleware-based route protection for secure access  
+      • Deployed on Vercel with environment-based configuration handling
+
+      Description:
+      • This e-commerce platform was developed as a full-stack solution using only Next.js for both client and server logic, showcasing the framework’s power and flexibility.
+
+      • The app features seller and user flows with tailored dashboards and data rendering using SSR (getServerSideProps), which significantly improved SEO and initial page load speeds.
+
+      • Tailwind CSS and ShadCN components were used to deliver a clean, mobile-friendly design. Custom REST APIs were built for handling orders, payments, and user data operations securely and efficiently.
+
+      • SMS-based OTP login was integrated using NextAuth and third-party gateways, increasing security and user trust. Geolocation-assisted address entry was implemented to enhance the checkout experience.
+
+      • Focused on performance, accessibility, and responsive design, the app delivers a near-native experience across devices and browsers.
+
+      This project highlights end-to-end ownership of both frontend and backend using a modern, production-ready stack suitable for commercial applications.
+        `,
+      images: [
+        "/homeshoppr01.png",
+        "/homeshoppr02.png",
+        "/homeshoppr03.png",
+        "/homeshoppr04.png",
+      ],
+      technologies: ["Next.js", "MongoDB", "TailwindCSS", "ShadCN", "TypeScript", "NextAuth", "OTP Auth", "SSR"],
+      liveUrl: "https://homeshoppr-three.vercel.app/",
+      githubUrl: "https://github.com/saurabh2004-cpu/homeshoppr",
+      featured: true,
+    },
+    {
+      id: 4,
+      title: "Therapist Website Frontend UI",
+      shortDescription:
+        "Designed a responsive and interactive frontend for a therapist booking platform using Next.js, Tailwind CSS, and Framer Motion.",
+      fullDescription: `
+        This project focuses on crafting a clean, accessible, and modern frontend interface for a therapist booking website. The goal was to create a visually soothing user experience that balances functionality with simplicity.
+
+        Key Features:
+        • Built with Next.js for fast routing and optimized performance  
+        • Used Tailwind CSS to implement a responsive and mobile-friendly layout  
+        • Integrated Framer Motion for smooth animations and dynamic transitions  
+        • Designed reusable components for therapist profiles, appointment cards, and call-to-action sections  
+        • Implemented a clear visual hierarchy for easy navigation and user guidance  
+        • Optimized UI for accessibility and cross-device compatibility
+
+        Technical Implementation:
+        • Leveraged the App Router in Next.js for page-based routing  
+        • Tailwind CSS used for rapid and consistent UI styling  
+        • Framer Motion integrated for fade-in effects, hover animations, and page transitions  
+        • Clean component architecture maintained for scalability and ease of update  
+        • Fully responsive design ensures usability across desktops, tablets, and mobile devices
+
+        Description:
+        This frontend project highlights a UI-centric build, where the primary focus was delivering an intuitive experience for users seeking therapy sessions. The animation and motion effects help create an engaging interface while keeping performance optimized. The project is fully compatible with backend integration and serves as a professional and polished entry point for any mental health or wellness platform.
+          `,
+      images: [
+        "/landingpage01.png",
+        "/landingpage02.png",
+        "/landingpage03.png",
+        "/landingpage04.png",
+        "/landingpage05.png",
+        "/landingpage06.png",
+        "/landingpage07.png",
+        "/landingpage08.png",
+        "/landingpage09.png",
+        "/landingpage10.png",
+        "/landingpage11.png",
+      ],
+      technologies: ["Next.js", "TailwindCSS", "Framer Motion", "Responsive Design", "Component Architecture"],
+      liveUrl: "https://landing-page-brown-iota.vercel.app/",
+      githubUrl: "https://github.com/saurabh2004-cpu/LandingPage",
+      featured: false,
+    },
+    {
+      id: 5,
+      title: "Escape Room Landing Page",
+      shortDescription:
+        "Crafted a visually engaging, mobile-friendly landing page for an escape room experience using Next.js, Tailwind CSS, and Framer Motion.",
+      fullDescription: `
+      This project is a high-converting, animated landing page built for an immersive escape room experience. The design emphasizes user engagement, clear call-to-actions, and an adventurous theme.
+
+      Key Features:
+      • Fully responsive landing page design with strong visual hierarchy  
+      • Hero section with animated headings and smooth scroll interactions  
+      • Interactive features implemented using Framer Motion for animations  
+      • Clear navigation and sectioning for storyline, booking details, and testimonials  
+      • Optimized for performance and SEO with fast load times and clean code
+
+      Technical Implementation:
+      • Developed using Next.js with optimized routing and build performance  
+      • Styled using Tailwind CSS to ensure design consistency across devices  
+      • Framer Motion used for entrance animations, hover effects, and smooth scroll cues  
+      • Semantic HTML and accessibility-focused structure for better UX  
+      • Ready for backend booking integration if needed
+
+      Description:
+      The Escape Room landing page project demonstrates frontend craftsmanship focused on branding and user engagement. It reflects a deep understanding of layout, animation, and responsive design, making it ideal for marketing single-purpose event-based platforms or startups.
+  `,
+      images: [
+        "/escape-room01.png",
+        "/escape-room01.png",
+        "/escape-room03.png",
+        "/escape-room04.png",
+        "/escape-room05.png",
+        "/escape-room06.png",
+        "/escape-room07.png",
+      ],
+      technologies: ["Next.js", "TailwindCSS", "Framer Motion", "Responsive Design", "Landing Page"],
+      liveUrl: "https://escape-room-landing.vercel.app/", // replace with your actual link
+      githubUrl: "https://github.com/saurabh2004-cpu/escape-room-landing", // replace if public
+      featured: false,
+    }
+
+
   ]
 
   const nextProject = () => {
@@ -136,7 +327,6 @@ const Projects = () => {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10"></div>
                 </div>
 
                 {/* Content Section */}

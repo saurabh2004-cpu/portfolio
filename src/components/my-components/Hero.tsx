@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Download } from "lucide-react"
 import Image from "next/image"
@@ -9,10 +9,10 @@ const Hero = () => {
   const [currentText, setCurrentText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
-  const [texts, setTexts] = useState([''])
+
+  const texts = ["Developer", "Designer", "Creator"]
 
   useEffect(() => {
-    setTexts(['Frontend Developer', 'Backend Developer', 'Fullstack Developer'])
     const timeout = setTimeout(
       () => {
         const current = texts[currentIndex]
