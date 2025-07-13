@@ -256,8 +256,8 @@ const Projects = () => {
         "/escape-room07.png",
       ],
       technologies: ["Next.js", "TailwindCSS", "Framer Motion", "Responsive Design", "Landing Page"],
-      liveUrl: "https://escape-room-landing.vercel.app/", // replace with your actual link
-      githubUrl: "https://github.com/saurabh2004-cpu/escape-room-landing", // replace if public
+      liveUrl: "https://escape-room-one-pi.vercel.app/", 
+      githubUrl: "https://github.com/saurabh2004-cpu/saurabh2004-cpu/Escape-Room", 
       featured: false,
     }
 
