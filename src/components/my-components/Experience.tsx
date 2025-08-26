@@ -15,7 +15,7 @@ const Experience = () => {
         "Pursuing Bachelor of Computer Applications (BCA)",
         "Maintaining excellent academic performance with focus on web technologies",
       ],
-      technologies: ["Data Structures", "Algorithms", "DBMS", "Software Engineering","Computer Networks"],
+      technologies: ["Data Structures", "Algorithms", "DBMS", "Software Engineering", "Computer Networks"],
     },
     {
       id: 1,
@@ -32,9 +32,26 @@ const Experience = () => {
         "Used GraphQL for flexible data queries and Docker for containerization.",
         "Worked in an Agile team, contributing to both frontend and backend via Git "
       ],
-      technologies: ["React", "JavaScript", "CSS3", "Git", "Figma","Nodejs","Nextjs","MongoDb"],
+      technologies: ["React", "JavaScript", "CSS3", "Git", "Figma", "Nodejs", "Nextjs", "MongoDb"],
     },
-    
+    {
+      id: 2,
+      title: "Junior Developer",
+      company: "Buzzlink studios", // replace with actual company name
+      location: "On-site ", // update based on your job
+      duration: "July 2025 - Present",
+       type: "Full-time",
+      description: [
+        "Developing and maintaining both frontend and backend features of web applications.",
+        "Building responsive UIs with React, Next.js, and modern CSS frameworks.",
+        "Implementing RESTful APIs, database models, and server-side logic using Node.js and MongoDB.",
+        "Performing testing and debugging to ensure high-quality, bug-free releases.",
+        "Managing deployment pipelines and practicing CI/CD with DevOps tools for smooth delivery.",
+        "Collaborating in Agile workflows and contributing to continuous improvement of development processes."
+      ],
+      technologies: ["React", "Next.js", "Node.js", "MongoDB", "JavaScript", "Git", "Docker", "CI/CD", "Tailwind CSS"],
+    },
+
   ]
 
   const getTypeColor = (type: string) => {
@@ -68,9 +85,8 @@ const Experience = () => {
             {experiences.map((experience, index) => (
               <div
                 key={experience.id}
-                className={`relative flex items-center mb-12 ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
+                className={`relative flex items-center mb-12 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
               >
                 {/* Timeline dot */}
                 <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-purple-400 rounded-full border-4 border-slate-800 z-10"></div>
