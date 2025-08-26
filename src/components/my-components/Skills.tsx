@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Palette, Server, Database, Settings, Layers, Globe } from "lucide-react"
+import { Code, Palette, Server, Database, Settings, Layers, Globe, Bot } from "lucide-react"
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -48,7 +48,8 @@ const Skills = () => {
       color: "from-purple-400 to-violet-500",
       skills: [
         { name: "MongoDB", level: 75 },
-        { name: "Mongoose", level: 80 },
+        { name: "Mysql", level: 70 },
+        { name: "Qdrant DB (vector database)", level: 65 },
       ],
     },
     {
@@ -65,15 +66,16 @@ const Skills = () => {
       ],
     },
     {
-      title: "Others",
-      icon: Layers,
+      title: "Ai And Tools",
+      icon: Bot,
       color: "from-pink-400 to-rose-500",
       skills: [
-        { name: "Full Stack Development", level: 85 },
-        { name: "RESTful APIs", level: 80 },
-        { name: "GraphQL", level: 65 },
-        { name: "Microservices", level: 60 },
-        { name: "Agile Methodologies", level: 75 },
+        { name: "Langcgain Js", level: 85 },
+        { name: "LangGraph", level: 80 },
+        { name: "OpenAi API", level: 95 },
+        { name: "Ai Agents", level: 70 },
+        { name: "Mcp Servers", level: 75 },
+        { name: "Huggingface", level: 75 },
       ],
     },
   ]
